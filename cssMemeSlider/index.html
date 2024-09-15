@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cssMemeSlider</title>
-</head>
-<body>
-    <h1>Hello</h1>
-</body>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <section class="slider">
+        <div class="slider__items">
+          <input type="radio" name="sl" id="slider__card1" checked />
+          <input type="radio" name="sl" id="slider__card2" />
+          <input type="radio" name="sl" id="slider__card3" />
+          <input type="radio" name="sl" id="slider__card4" />
+          <input type="radio" name="sl" id="slider__card5" />
+
+          <div class="slider__card slider__card_first">
+            <img src="./assets/img/image1.JPG" alt="image" />
+            <p>Greeting</p>
+          </div>
+          <div class="slider__card">
+            <img src="./assets/img/image2.JPG" alt="image" />
+            <p>When you are new</p>
+          </div>
+          <div class="slider__card">
+            <img src="./assets/img/image3.JPG" alt="image" />
+            <p>HTML CSS</p>
+          </div>
+          <div class="slider__card">
+            <img src="./assets/img/image4.JPG" alt="image" />
+            <p>I just corrected CSS</p>
+          </div>
+          <div class="slider__card">
+            <img src="./assets/img/image5.JPG" alt="image" />
+            <p>Frontend roadmap</p>
+          </div>
+
+          <div class="nav">
+            <label for="slider__card1" class="nav__bar">
+              <div class="nav__bar-item"></div>
+            </label>
+            <label for="slider__card2" class="nav__bar">
+              <div class="nav__bar-item"></div>
+            </label>
+            <label for="slider__card3" class="nav__bar">
+              <div class="nav__bar-item"></div>
+            </label>
+            <label for="slider__card4" class="nav__bar">
+              <div class="nav__bar-item"></div>
+            </label>
+            <label for="slider__card5" class="nav__bar">
+              <div class="nav__bar-item"></div>
+            </label>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
