@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(227, 221, 221);
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider {
+    width: 1000px;
+    height: 700px;
+    overflow: scroll;
+    border: 10px solid #fff;
+}
+input {
+    position: absolute;
+    visibility: hidden;
+}
+.slider__items {
+    width: 500%;
+    height: 100%;
+    display: flex;
+    background-color: rgb(138, 138, 138);
+}
+.slider__card {
+    position: relative;
+    width: 20%;
+    transition: all 1s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider__card img {
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+}
+.slider__card p {
+    position: absolute;
+    left: 220px;
+    bottom: 20px;
+    color: #fff;
+    font-size: 32px;
+}
