@@ -15,9 +15,13 @@ main {
     justify-content: center;
 }
 .slider {
-    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
     height: 700px;
-    overflow: scroll;
+    overflow: hidden;
     border: 10px solid #fff;
 }
 input {
@@ -25,10 +29,11 @@ input {
     visibility: hidden;
 }
 .slider__items {
+    position: relative;
     width: 500%;
     height: 100%;
     display: flex;
-    background-color: rgb(138, 138, 138);
+    background-color: rgb(101, 101, 101);
 }
 .slider__card {
     position: relative;
@@ -45,8 +50,66 @@ input {
 }
 .slider__card p {
     position: absolute;
-    left: 220px;
+    left: 80px;
     bottom: 20px;
     color: #fff;
     font-size: 32px;
+}
+
+.nav {
+    position: absolute;
+    bottom: 16px;
+    left: 450px;
+    display: flex;
+}
+.nav__bar {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav__bar-item {
+    height: 18px;
+    width: 18px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: #1e11ac;
+    border: 1px solid #1e11ac;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+.nav__bar:hover > .nav__bar-item {
+    background-color: #c6c5c5;
+}
+
+#slider__card1:checked ~ .slider__card_first {
+    margin-left: 0%;
+}
+#slider__card1:checked ~ .nav .nav__bar:nth-child(1) .nav__bar-item {
+    background-color: #fff;
+}
+#slider__card2:checked ~ .slider__card_first {
+    margin-left: -20%;
+}
+#slider__card2:checked ~ .nav .nav__bar:nth-child(2) .nav__bar-item {
+    background-color: #fff;
+}
+#slider__card3:checked ~ .slider__card_first {
+    margin-left: -40%;
+}
+#slider__card3:checked ~ .nav .nav__bar:nth-child(3) .nav__bar-item {
+    background-color: #fff;
+}
+#slider__card4:checked ~ .slider__card_first {
+    margin-left: -60%;
+}
+#slider__card4:checked ~ .nav .nav__bar:nth-child(4) .nav__bar-item {
+    background-color: #fff;
+}
+#slider__card5:checked ~ .slider__card_first {
+    margin-left: -80%;
+}
+#slider__card5:checked ~ .nav .nav__bar:nth-child(5) .nav__bar-item {
+    background-color: #fff;
 }
